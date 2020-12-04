@@ -1,17 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/root"
     android:background="#212E39"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <include
-        android:id="@+id/layer1"
-        layout="@layout/layers_layout"
+    <com.gauravbhola.ripplepulsebackground.RipplePulseLayout
+        android:id="@+id/rip5"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="750dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-350dp"
+        ripple:duration="@integer/duration"
+        ripple:endRadius="375dp"
+        ripple:rippleColor="#20BFFF"
+        ripple:rippleType="fill"
+        ripple:startRadius="325dp">
 
-</LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="650dp"
+            android:layout_height="650dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ring_gradient_light" />
+    </com.gauravbhola.ripplepulsebackground.RipplePulseLayout>
+
+    <com.gauravbhola.ripplepulsebackground.RipplePulseLayout
+        android:id="@+id/rip4"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-350dp"
+        ripple:duration="@integer/duration"
+        ripple:endRadius="340dp"
+        ripple:rippleColor="#20BFFF"
+        ripple:rippleType="fill"
+        ripple:startRadius="290dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="600dp"
+            android:layout_height="600dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ring_gradient_light" />
+    </com.gauravbhola.ripplepulsebackground.RipplePulseLayout>
+
+    <com.gauravbhola.ripplepulsebackground.RipplePulseLayout
+        android:id="@+id/rip3"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-300dp"
+        ripple:duration="@integer/duration"
+        ripple:endRadius="290dp"
+        ripple:rippleColor="#20BFFF"
+        ripple:rippleType="fill"
+        ripple:startRadius="250dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ring_gradient_light" />
+    </com.gauravbhola.ripplepulsebackground.RipplePulseLayout>
+
+    <com.gauravbhola.ripplepulsebackground.RipplePulseLayout
+        android:id="@+id/rip2"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-250dp"
+        android:clipChildren="false"
+        ripple:duration="@integer/duration"
+        ripple:endRadius="240dp"
+        ripple:rippleColor="#20BFFF"
+        ripple:rippleType="fill"
+        ripple:startRadius="200dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ring_gradient_light"
+            android:visibility="visible" />
+    </com.gauravbhola.ripplepulsebackground.RipplePulseLayout>
+
+    <com.gauravbhola.ripplepulsebackground.RipplePulseLayout
+        android:id="@+id/rip1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-200dp"
+        android:clipChildren="false"
+        ripple:duration="@integer/duration"
+        ripple:endRadius="190dp"
+        ripple:rippleColor="#20BFFF"
+        ripple:rippleType="fill"
+        ripple:startRadius="150dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ring_gradient_light"
+            android:visibility="visible" />
+    </com.gauravbhola.ripplepulsebackground.RipplePulseLayout>
+
+    <com.gauravbhola.ripplepulsebackground.RipplePulseLayout
+        android:id="@+id/rip0"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-150dp"
+        android:clipChildren="false"
+        ripple:duration="@integer/duration"
+        ripple:endRadius="140dp"
+        ripple:rippleColor="#20BFFF"
+        ripple:rippleType="fill"
+        ripple:startRadius="100dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ring_gradient_light"
+            android:visibility="visible" />
+    </com.gauravbhola.ripplepulsebackground.RipplePulseLayout>
+
+
+</RelativeLayout>
